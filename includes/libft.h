@@ -18,7 +18,6 @@
 #  include <stdlib.h>
 #  include <unistd.h>
 #  include <fcntl.h>
-#  include <mlx.h>
 
 typedef struct	s_coord
 {
@@ -26,28 +25,6 @@ typedef struct	s_coord
 	int				y;
 	int				z;
 }					t_coord;
-
-typedef struct		s_env
-{
-	void			*mlx_ptr;
-	void			*mlx_win;
-	void			*img_ptr;
-	int				bpp;
-	int				endian;
-	int				sizeline;
-	char			*data;
-}					t_env;
-
-typedef struct		s_img
-{
-	int				im_width;
-	int				im_height;
-	unsigned int	im_bpp;
-	unsigned int	im_bpl;
-	unsigned char	*im_buffer;
-	void			*img;
-}					t_img;
-
 
 typedef struct		s_list
 {
