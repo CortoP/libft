@@ -6,7 +6,7 @@
 /*   By: vlehuger <vlehuger@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:37:06 by vlehuger          #+#    #+#             */
-/*   Updated: 2014/01/22 16:28:48 by vlehuger         ###   ########.fr       */
+/*   Updated: 2014/01/25 11:47:50 by vlehuger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ void		ft_putnbr(int n);
 void		ft_putnbr_fd(int n, int fd);
 void		ft_putstr(char const *s);
 void		ft_putstr_fd(char const *s, int fd);
+int			ft_strcmp(const char *s1, const char *s2);
 void		ft_strdel(char **as);
 char		*ft_strdup(const char *s1);
 char		*ft_strjoin(char const *s1, char const *s2);
@@ -81,7 +82,6 @@ char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(const char *s1, const char *s2);
 char		*ft_strnstr(const char *s1, const char *s2, size_t n);
-int			ft_strcmp(const char *s1, const char *s2);
 void		*ft_memalloc(size_t size);
 void		ft_strclr(char *s);
 void		ft_striter(char *s, void (*f)(char *));
