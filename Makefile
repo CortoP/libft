@@ -6,7 +6,7 @@
 #    By: vlehuger <vlehuger@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/12/06 17:01:45 by vlehuger          #+#    #+#              #
-#    Updated: 2014/01/25 11:48:19 by vlehuger         ###   ########.fr        #
+#    Updated: 2014/01/25 11:50:12 by vlehuger         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -47,6 +47,7 @@ SRCS = \
 		ft_strnew.c \
 		ft_strsplit.c \
 		ft_strsub.c \
+		ft_strtrim.c \
 		ft_tolower.c \
 		ft_toupper.c \
 		get_coord.c \
