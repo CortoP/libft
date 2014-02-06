@@ -6,7 +6,7 @@
 #    By: vlehuger <vlehuger@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/12/06 17:01:45 by vlehuger          #+#    #+#              #
-#    Updated: 2014/01/25 11:50:12 by vlehuger         ###   ########.fr        #
+#    Updated: 2014/02/06 13:47:46 by vlehuger         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -30,6 +30,8 @@ SRCS = \
 		ft_lstnew.c \
 		ft_memcpy.c \
 		ft_memdel.c \
+		ft_putarray.c \
+		ft_putarray_fd.c \
 		ft_putchar.c \
 		ft_putchar_fd.c \
 		ft_putendl.c \

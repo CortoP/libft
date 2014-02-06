@@ -6,7 +6,7 @@
 /*   By: vlehuger <vlehuger@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:37:06 by vlehuger          #+#    #+#             */
-/*   Updated: 2014/01/25 11:50:54 by vlehuger         ###   ########.fr       */
+/*   Updated: 2014/02/06 13:48:23 by vlehuger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ t_list		*ft_lstnew(void const *conent, size_t content_size);
 void		*ft_memcpy(void *s1, const void *s2, size_t n);
 void		ft_memdel(void **ap);
 int			ft_nb_int(char *line);
+void		ft_putarray(char **array);
+void		ft_putarray_fd(char **array, int fd);
 void		ft_putchar(char c);
 void		ft_putchar_fd(char c, int fd);
 void		ft_putendl(char const *s);
