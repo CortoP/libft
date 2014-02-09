@@ -6,7 +6,7 @@
 /*   By: vlehuger <vlehuger@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:37:06 by vlehuger          #+#    #+#             */
-/*   Updated: 2014/02/06 13:48:23 by vlehuger         ###   ########.fr       */
+/*   Updated: 2014/02/09 16:26:01 by vlehuger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,17 @@ int			ft_tolower(int c);
 t_coord		*get_coord(int x, int y, int z);
 int			get_next_line(const int fd, char **line);
 int			**get_grid(char **argv);
+
+/*
+** VECTORS
+*/
+t_coord		*ft_add_vectors(t_coord *v1, t_coord *v2);
+t_coord		*ft_sub_vectors(t_coord *v1, t_coord *v2);
+t_coord		*ft_mult_vector(t_coord *v, double k);
+t_coord		*ft_div_vector(t_coord *v, double k);
+
+
+
 
 void		*ft_memccpy(void *s1, const void *s2, int c, size_t n);
 void		*ft_memmove(void *s1, const void *s2, size_t n);
