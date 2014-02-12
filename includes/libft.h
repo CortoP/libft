@@ -6,7 +6,7 @@
 /*   By: vlehuger <vlehuger@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:37:06 by vlehuger          #+#    #+#             */
-/*   Updated: 2014/02/09 16:26:01 by vlehuger         ###   ########.fr       */
+/*   Updated: 2014/02/12 14:56:10 by vlehuger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ void		ft_putnbr_fd(int n, int fd);
 void		ft_putstr(char const *s);
 void		ft_putstr_fd(char const *s, int fd);
 int			ft_strcmp(const char *s1, const char *s2);
+t_coord		*ft_str_to_coord(char *str);
 void		ft_strdel(char **as);
 char		*ft_strdup(const char *s1);
 char		*ft_strjoin(char const *s1, char const *s2);
