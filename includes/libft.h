@@ -6,7 +6,7 @@
 /*   By: vlehuger <vlehuger@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:37:06 by vlehuger          #+#    #+#             */
-/*   Updated: 2014/02/12 14:56:10 by vlehuger         ###   ########.fr       */
+/*   Updated: 2014/02/14 11:31:23 by vlehuger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 
 typedef struct	s_coord
 {
-	int				x;
-	int				y;
-	int				z;
+	double			x;
+	double			y;
+	double			z;
 }					t_coord;
 
 typedef struct		s_list
@@ -32,6 +32,17 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+typedef struct		s_env
+{
+	void			*mlx_ptr;
+	void			*mlx_win;
+	void			*mlx_img;
+	int				size_line;
+	int				endian;
+	int				bpp;
+	char			*data;
+}					t_env;
 
 int			ft_atoi(const char *str);
 int			ft_isalnum(int c);
@@ -57,7 +68,6 @@ void		ft_putnbr_fd(int n, int fd);
 void		ft_putstr(char const *s);
 void		ft_putstr_fd(char const *s, int fd);
 int			ft_strcmp(const char *s1, const char *s2);
-t_coord		*ft_str_to_coord(char *str);
 void		ft_strdel(char **as);
 char		*ft_strdup(const char *s1);
 char		*ft_strjoin(char const *s1, char const *s2);
@@ -67,11 +77,13 @@ char		*ft_strnew(size_t size);
 char		**ft_strsplit(char const *s, char c);
 char		*ft_strsub(char const *s, unsigned int start, size_t len);
 char		*ft_strtrim(char const *s);
+t_coord		*ft_str_to_coord(char *str);
 int			ft_toupper(int c);
 int			ft_tolower(int c);
-t_coord		*get_coord(int x, int y, int z);
+t_coord		*get_coord(double x, double y, double z);
 int			get_next_line(const int fd, char **line);
 int			**get_grid(char **argv);
+void		pixel_to_img(unsigned long img_color, t_env *e, int x, int y);
 
 /*
 ** VECTORS
