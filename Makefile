@@ -6,7 +6,7 @@
 #    By: vlehuger <vlehuger@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/12/06 17:01:45 by vlehuger          #+#    #+#              #
-#    Updated: 2014/02/14 11:27:07 by vlehuger         ###   ########.fr        #
+#    Updated: 2014/02/25 11:46:49 by vlehuger         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -18,7 +18,8 @@ LDFLAGS = rcs
 NAME = libft.a
 
 SRCS = \
-		ft_atoi.c\
+		ft_atod.c \
+		ft_atoi.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
 		ft_isascii.c \
