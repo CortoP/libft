@@ -6,7 +6,7 @@
 /*   By: vlehuger <vlehuger@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:37:06 by vlehuger          #+#    #+#             */
-/*   Updated: 2014/02/09 16:26:01 by vlehuger         ###   ########.fr       */
+/*   Updated: 2014/02/25 11:47:12 by vlehuger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 
 typedef struct	s_coord
 {
-	int				x;
-	int				y;
-	int				z;
+	double			x;
+	double			y;
+	double			z;
 }					t_coord;
 
 typedef struct		s_list
@@ -33,6 +33,18 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+typedef struct		s_env
+{
+	void			*mlx_ptr;
+	void			*mlx_win;
+	void			*mlx_img;
+	int				size_line;
+	int				endian;
+	int				bpp;
+	char			*data;
+}					t_env;
+
+double		ft_atod(const char *s);
 int			ft_atoi(const char *str);
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
@@ -66,11 +78,13 @@ char		*ft_strnew(size_t size);
 char		**ft_strsplit(char const *s, char c);
 char		*ft_strsub(char const *s, unsigned int start, size_t len);
 char		*ft_strtrim(char const *s);
+t_coord		*ft_str_to_coord(char *str);
 int			ft_toupper(int c);
 int			ft_tolower(int c);
-t_coord		*get_coord(int x, int y, int z);
+t_coord		*get_coord(double x, double y, double z);
 int			get_next_line(const int fd, char **line);
 int			**get_grid(char **argv);
+void		pixel_to_img(unsigned long img_color, t_env *e, int x, int y);
 
 /*
 ** VECTORS
